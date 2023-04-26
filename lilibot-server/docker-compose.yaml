@@ -1,0 +1,12 @@
+version: "3"
+services:
+  lilibot-server:
+    image: lfsenior/lilibot-server:latest
+    container_name: lilibot-server
+    restart: unless-stopped
+    tty: true
+    ports:
+      - 8088:8088
+    volumes:
+      - ./config:/lilibot/config
+      - ./log:/lilibot/log

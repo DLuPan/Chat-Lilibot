@@ -1,0 +1,5 @@
+# 忽略相关目录及文件
+.vscode
+__pycache__
+log
+config
